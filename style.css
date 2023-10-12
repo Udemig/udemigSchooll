@@ -1,0 +1,297 @@
+/*varsayilan bosluklari kaldir */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* kaydirma cubugu bir yere giderken ani degil 
+sure ve animasyonlu olarak gitsin*/
+html {
+    scroll-behavior: smooth;
+}
+
+.center-item{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.align-box{
+    border-radius: 10px;
+    flex-basis: 30%;
+    margin-bottom: 30px;
+}
+/* header */
+header{
+    background-color: yellowgreen;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/bg.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+   list-style-type: none;
+   display: inline-block;
+   padding: 8px 12px;
+   position: relative;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+.nav-links ul li a::after{
+    content: '';
+    background-color: red;
+    display: block;
+    margin-top: 4px;
+    width: 0;
+    height: 2px;
+}
+
+.nav-links ul li a:hover::after{
+    width: 100%;
+    transition: .3s;
+}
+
+/* text box */
+.text-box{
+    color: white;
+    width: 90%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.text-box h1{
+    font-size:  60px
+}
+.text-box p{
+    margin:  20px 40px;
+    font-size: 15px;
+    color: white;
+}
+
+.hero-btn{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 15px 35px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+.hero-btn:hover{
+    border: 1px solid red;
+    background-color: red;
+    transition: .3s;
+}
+
+nav .bi{
+    font-size: 30px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+nav .bi:hover{
+    font-size: 35px;
+    transition: .3s;
+}
+
+
+/* course */
+
+h1{
+    font-size: 35px;
+}
+
+p{
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+    background-color: rgb(230, 230, 230);
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+h3{
+    margin: 10px 0;
+}
+
+.course-col:hover{
+    box-shadow:  0 0 20px rgba(0,0,0,0.7);
+    transition: .3s;
+}
+
+
+
+/* campus*/
+
+.campus-col{
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: .3s;
+}
+.layer:hover{
+    background-color: rgba(200,100,50,0.7);
+}
+
+.layer h3{
+    opacity: 0;
+    color: white;
+    width: 100%;
+    font-weight: 500;
+    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    transition: .3s;
+}
+
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+
+/*facilities*/
+.facilities-col{
+    text-align: left;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* testemonials*/
+.testemonials-col{
+    background-color: antiquewhite;
+    text-align: left;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+}
+.testemonials-col img{
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testemonials-col p{
+    padding: 0;
+}
+
+.testemonials-col h3{
+    margin-top: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.testemonials-col .bi{
+    color: red;
+}
+
+/* ua*/
+.ua{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/london.jpeg);
+    padding: 100px 0;
+    text-align: center;
+    width: 80%;
+    margin: 100px auto;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.ua h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/* About*/
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer h1{
+    margin: 25px 0;
+}
+
+.icons .bi{
+    color: red;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 20px 10px;
+}
+
+.bi-heart-fill{
+    color: red;
+}
+
+/* responsive */
+@media (max-width:768px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: none;
+    }
+    nav .bi{
+        display: block;
+
+    }
+    .row{
+        flex-direction: column;
+    }
+}
+
